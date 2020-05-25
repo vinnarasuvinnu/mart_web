@@ -9451,8 +9451,8 @@ textarea.form-control {
 
 .ftco-category .category-wrap {
   display: block;
-  width: 100%;
-  height: 250px; }
+  width: 800;
+  height: 460px; }
   .ftco-category .category-wrap .text {
     background: #28a428; }
     .ftco-category .category-wrap .text h2 {
