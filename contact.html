@@ -86,85 +86,47 @@
 	  </nav>
     <!-- END nav -->
 
-    <div class="hero-wrap hero-bread" style="background-image: url('images/hotel1/hotel1-7.jpg');">
+    <div class="hero-wrap hero-bread bg-dark py-3 px-3" ><!--style="background-image: url('images/hotel1/hotel1-7.jpg');"-->
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate text-center">
-          	<p class="breadcrumbs"  ><span class="mr-2" ><a href="index.html" style="color:green">Home</a></span> <span style="color:green">Contact us</span></p>
-            <h1 class="mb-0 bread"  style="color:green" >Contact us</h1>
+          	<!--p class="breadcrumbs"  ><span class="mr-2" ><a href="index.html" style="color:green">Home</a></span> <span style="color:green">Contact us</span></p-->
+            <h1 class="mb-0 bread"  style="color:#32CD32" >Contact us</h1>
+			
           </div>
         </div>
       </div>
-    </div>
+	  
+    
 
-    <section class="ftco-section contact-section bg-light">
-      <div class="container">
-      	<!--div class="row d-flex mb-5 contact-info">
-          <div class="w-100"></div>
-          <div class="col-md-3 d-flex">
-          	<div class="info bg-white p-4">
-				<p><span>Contact Grievance Officer:</span> Akhila Mangevelli</p>
-	            <p><span>Address:</span> No 201, 2nd Floor, Smart Square Complex, 100 Feet Road, Indiranagar,
-						Bengaluru - 560038, Karnataka, India</p>
-	          </div>
-          </div>
-          <div class="col-md-3 d-flex">
-          	<div class="info bg-white p-4">
-	            <p><span>Phone:</span> <a href="tel://1234567920">+91-91594 14383
-					+91-88849 36269</a></p>
-	          </div>
-          </div>
-          <div class="col-md-3 d-flex">
-          	<div class="info bg-white p-4">
-	            <p><span>Email:</span> <a href="mailto:mrmart.hosur@gmail.com">mrmart.hosur@gmail.com</a></p>
-	          </div>
-          </div>
-          <div class="col-md-3 d-flex">
-          	<div class="info bg-white p-4">
-	            <p><span>Website</span> <a href="#">mr-mart.com </a></p>
-	          </div>
-          </div>
-        </div-->
-		<section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-primary">
-      <div class="container py-4">
-        <div class="row d-flex justify-content-center py-5 bg-white">
-          <div class="col-md-6">
-          	<h2 style="font-size: 22px;" class="mb-0">Subcribe to our Newsletter</h2>
-          	<span>Get e-mail updates about our latest shops and special offers</span>
-          </div>
-          <div class="col-md-6 d-flex align-items-center">
-            <form action="#" class="subscribe-form ">
-              <div class="form-group d-flex bg-primary">
-                <input type="text" class="form-control" placeholder="Enter email address">
-                <input type="submit" value="Subscribe" class="submit px-3">
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-	<br/>
+    <section class="ftco-section contact-section ">
+      <div class="container  py-3 px-5 bg-light">
+      	
         <section class="ftco-section contact-section ">
        <div class="container">
 	  <div class="row block-9 ">
-          <div class="col-md-12 order-md-last d-flex bg-light">
+          <div class="col-md-12 order-md-last bg-white ">
 
-            <form action="#" class="contact-form  bg-white py-3 px-5">
+            <form action="#" class="contact-form  py-3 px-5">
               <div class="form-group">
 			   <label> Name </label>
-                <input type="text" class="form-control" placeholder="Your Name" required >
+                <input type="text" class="form-control"  required  oninvalid="this.setCustomValidity('Enter Name ')"
+    oninput="this.setCustomValidity('')"  >
               </div>
               <div class="form-group">
 			   <label> Email </label>
-                <input type="text" class="form-control" placeholder="Your Email" required>
+                <input type="text" class="form-control"  required oninvalid="this.setCustomValidity('please provide proper email id')"
+    oninput="this.setCustomValidity('')"  required>
               </div>
               <div class="form-group">
 			   <label> subject  </label>
-                <input type="text" class="form-control" placeholder="Subject" required>
+                <input type="text" class="form-control"  required oninvalid="this.setCustomValidity('Enter Subject')"
+    oninput="this.setCustomValidity('')">
               </div>
               <div class="form-group">
 			   <label> Message </label>
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                <textarea name="" id="" cols="30" rows="7" class="form-control" required oninvalid="this.setCustomValidity('please provide message')"
+    oninput="this.setCustomValidity('')"></textarea>
               </div>
               <div class="form-group ">
                 <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5 ">
@@ -175,7 +137,31 @@
 		  </div>
 		  </div>
     </section>
-
+	<br/>
+	<section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-primary">
+      <div class="container py-4">
+        <div class="row d-flex justify-content-center py-5 bg-white">
+          <div class="col-md-6">
+          	<h2 style="font-size: 22px;" class="mb-0">Subcribe to our Newsletter</h2>
+          	<span>Get e-mail updates about our latest shops and special offers</span>
+          </div>
+          <div class="col-md-6 d-flex align-items-center">
+            <form action="#" class="subscribe-form ">
+              <div class="form-group d-flex p-2 bg-primary">
+                <input type="text" class="form-control " placeholder="Enter email address"> &nbsp &nbsp
+                <input type="submit" value="Subscribe" class="submit py-3 px-3">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+	<br/>
+	<br/>
+</section>
+</div>
+<br/>
+<br/>
 <footer class="ftco-footer ftco-section bg-light">
       <div class="container">
       	<div class="row">
